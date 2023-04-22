@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<textbox>
+    <h4>歌詞を入力</h4>
+    <form method="POST" action="/" enctype="multipart/form-data" autocomplete="off">
+        <textarea name="lyric" placeholder="歌詞を入力" rows="10"></textarea>
+        <button type="submit" class="material-symbols-rounded">cut</button>
+    </form>
+</textbox>
+{% endblock %}
